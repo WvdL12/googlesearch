@@ -2,79 +2,79 @@
 <html lang="en">
 	<head>
 		<title> Search </title>
+		<!--
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo">	
+		-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+		<style>
 
-#main {
-	display: grid;
-	grid-template-columns: auto;
-	grid-row-gap: 0px;
-	margin-top: 100px;
-}
+			#main {
+				display: grid;
+				grid-template-columns: auto;
+				grid-row-gap: 0px;
+				margin-top: 100px;
+			}
 
-#heading {
-	font-family: "Arimo", Verdana, Arial;
-	font-weight: bold;
-	font-size: 80px;
-	text-align: center;
-	padding: 0px;
-}
+			#heading {
+				font-family: Arial;
+				font-size: 90px;
+				text-align: center;
+				padding: 40px 0px 30px 0px;
+			}
 
-div > form {
-	text-align: center;
-	display: grid;
-	grid-row-gap: 20px;
-	grid-template-columns: auto;
-}
+			div > form {
+				text-align: center;
+				display: grid;
+				grid-row-gap: 20px;
+				grid-template-columns: auto;
+			}
 
-#search {
-	height: 50px;
-	width: 100%;
-	max-width: 600px;
-	min-width: 200px;
-	border: 1px solid lightgrey;
-	border-radius: 25px;
-	margin-left: 20px;
-	margin-right: 20px;
-	padding-left: 50px;
-	box-sizing: border-box;
-	background-image: url('./searchicon.png');
-	background-position: 15px 15px;
-	background-repeat: no-repeat;
-}
-#search:focus, #search:hover {
-	outline: none;
-	border: 0px solid white;
-	border-radius: 25px;
-	box-shadow: 0px 2px 10px lightgrey;
-}
+			#search {
+				height: 44px;
+				width: 100%;
+				max-width: 580px;
+				min-width: 200px;
+				border: 1px solid lightgrey;
+				border-radius: 22px;
+				margin: 0px 20px 10px 20px;
+				padding-left: 44px;
+				box-sizing: border-box;
+				background-image: url('./searchicon.png');
+				background-position: 12px 12px;
+				background-repeat: no-repeat;
+			}
+			#search:focus, #search:hover {
+				outline: none;
+				border: 0px solid white;
+				border-radius: 22px;
+				box-shadow: 0px 2px 10px lightgrey;
+			}
 
-.submit {
-	width: 100%;
-	max-width: 140px;
-	height: 40px;
-	background-color: whitesmoke;
-	border: 1px solid whitesmoke;
-	border-radius: 4px;
-	color: grey;
-	font-size: 15px;
+			.submit {
+				width: 100%;
+				max-width: 140px;
+				height: 40px;
+				background-color: whitesmoke;
+				border: 1px solid whitesmoke;
+				border-radius: 4px;
+				color: grey;
+				font-size: 15px;
 
-}
+			}
 
-.submit:hover, .submit:focus {
-	outline: none;
-	border: 1px solid lightgrey;
-	border-radius: 4px;
-	box-shadow: 0px 1px 2px lightgrey;
-	color: black;
-
-}
-</style>
+			.submit:hover, .submit:focus {
+				outline: none;
+				border: 1px solid lightgrey;
+				border-radius: 4px;
+				box-shadow: 0px 1px 2px lightgrey;
+				color: black;
+	
+			}			
+		</style>
 	</head>
 	<body>
 		<div id="main">
-			<h1 id="heading">Google</h1>
+			<div id="heading">Google</div>
 			
 			<form action = "https://google.com/search">
 				<div>
