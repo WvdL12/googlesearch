@@ -7,12 +7,31 @@
 		-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
+			
+			#links {
+				text-align: right;
+				font-family: Arial;
+				font-size: 14px;
+				padding: 12px 20px 0px 0px;
+			}
+			
+			a:link, a:visited {
+				color: black;
+				text-decoration: none;
+				background-color: transparent;
+			}
+
+			a:hover {
+				color: grey;
+				text-decoration: underline;
+				background-color: transparent;
+			}
 
 			#main {
 				display: grid;
 				grid-template-columns: auto;
 				grid-row-gap: 0px;
-				margin-top: 100px;
+				margin-top: 66px;
 			}
 
 			#heading {
@@ -73,6 +92,11 @@
 		</style>
 	</head>
 	<body>
+		<div id="links">
+			<a href="./advanced.html" style="padding-right:5px"> Advanced</a>
+			<a href="./images.html"> Images</a>		
+		</div>
+
 		<div id="main">
 			<div id="heading">Google</div>
 			
