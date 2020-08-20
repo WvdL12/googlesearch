@@ -23,24 +23,56 @@
 				border-radius: 4px;
 				box-shadow: 0px 1px 2px lightgrey;
 				color: black;
-			}			
+			}	
+
+			#heading {
+				font-size: 28px;
+				text-align: left;
+				padding: 4px 0px 16px 6px;
+			}
+			
+			#sub-heading {
+				font-family: Arial;
+				color: red;
+				font-size: 20px;
+				padding: 25px 37px;
+				margin-bottom: 45px;
+				border-bottom: 1px solid gainsboro;
+			}
+
+			#main {
+				margin: 0px;
+			}
+
+			#top-line {
+				display: grid;
+				grid-template-columns: 40px auto;
+				grid-row-gap: 0px;
+				background-color: lavenderblush;
+			}
+
 		</style>
 	</head>
 	<body>
-		<div id="links">
-			<a href="./index.html"> Google Search</a>
-		</div>
-
 		<div id="main">
-			<div id="heading">
-				<span style="color:#4285f4">G</span><!--
-				--><span style="color:#ea4335">o</span><!--
-				--><span style="color:#fbbc05">o</span><!--
-				--><span style="color:#4285f4">g</span><!--
-				--><span style="color:#34a853">l</span><!--
-				--><span style="color:#ea4335">e</span>
+			<div id="top-line">
+				<div id="heading">
+					<span style="color:#4285f4">G</span><!--
+					--><span style="color:#ea4335">o</span><!--
+					--><span style="color:#fbbc05">o</span><!--
+					--><span style="color:#4285f4">g</span><!--
+					--><span style="color:#34a853">l</span><!--
+					--><span style="color:#ea4335">e</span>
+				</div>
+			
+				<div id="links">
+					<a href="./index.html"> Google Search</a>
+				</div>
+
 			</div>
 			
+			<div id="sub-heading">Advanced Search</div>
+
 			<form action = "https://google.com/search">
 				<div>
 					<input id="search" type=text name=q> 
