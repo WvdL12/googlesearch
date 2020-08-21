@@ -5,6 +5,29 @@
 		<link rel="stylesheet" href="./layout.css">	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
+			#search {
+				height: 30px;
+				width: 100%;
+				max-width: 500px;
+				min-width: 150px;
+				border-radius: 0px;
+				padding: 10px;
+				margin: 5px 20px;
+				background-image: none;
+			}
+
+			#search:hover {
+				border: 1px solid lightgrey;
+				border-radius: 0px;
+				box-shadow: none;
+			}
+
+			#search:focus {
+				border-radius: 0px;
+				border: 1px solid lightblue;
+				box-shadow: 0px 1px 3px 1px inset dodgerblue;
+			}
+	
 			.submit {
 				width: 100%;
 				max-width: 140px;
@@ -78,6 +101,7 @@
 					<input id="search" type=text name=q> 
 				</div>
 				
+
 				<div> 
 					<input class="submit" type=submit value="Google Search">
 				</div>
