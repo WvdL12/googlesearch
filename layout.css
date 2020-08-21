@@ -40,7 +40,7 @@ div > form {
 	grid-template-columns: auto;
 }
 
-#search {
+.search {
 	height: 44px;
 	width: 100%;
 	max-width: 580px;
@@ -55,7 +55,7 @@ div > form {
 	background-repeat: no-repeat;
 }
 	
-#search:focus, #search:hover {
+.search:focus, .search:hover {
 	outline: none;
 	border: 0px solid white;
 	border-radius: 22px;

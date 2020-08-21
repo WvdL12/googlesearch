@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="./layout.css">	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
-			#search {
+			.search {
 				height: 30px;
 				width: 100%;
 				max-width: 500px;
@@ -16,13 +16,13 @@
 				background-image: none;
 			}
 
-			#search:hover {
+			.search:hover {
 				border: 1px solid lightgrey;
 				border-radius: 0px;
 				box-shadow: none;
 			}
 
-			#search:focus {
+			.search:focus {
 				border-radius: 0px;
 				border: 1px solid lightblue;
 				box-shadow: 0px 1px 3px 1px inset dodgerblue;
@@ -74,6 +74,10 @@
 				background-color: lavenderblush;
 			}
 
+			div > form {
+				text-align: left;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -98,10 +102,25 @@
 
 			<form action = "https://google.com/search">
 				<div>
-					<input id="search" type=text name=q> 
+					<label for="all_words_query">all these words:</label>
+					<input class="search" id="all_words_query" type=text name=q> 
 				</div>
 				
+				<div>	
+					<label for="phrase_query">this exact word or phrase:</label>
+					<input class="search" id="phrases_query" type=text name=q> 
+				</div>
 
+				<div>
+					<label for="any_words_query">any of these words:</label>
+					<input class="search" id="any_words_query" type=text name=q> 
+				</div>
+
+				<div>
+					<label for="none_words_query">none of these words:</label>
+					<input class="search" id="none_words_query" type=text name=q> 
+				</div>
+				
 				<div> 
 					<input class="submit" type=submit value="Google Search">
 				</div>
